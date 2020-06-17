@@ -58,4 +58,36 @@ a {
   .navbar .menu {
     outline: 1px solid red;
     display: flex;
-    margin-left: 1.7rem; }
+    margin-left: 2rem;
+    padding: .6rem .8rem; }
+
+@media screen and (min-width: 1012px) {
+  .hamburger {
+    display: none; } }
+
+@media screen and (max-width: 1011px) {
+  .header {
+    outline: 4px solid yellow;
+    height: 20vh; }
+    .header .navbar {
+      position: relative;
+      display: flex;
+      outline: 1px solid green;
+      align-items: center;
+      justify-content: space-between;
+      width: 92vw; }
+      .header .navbar .header__input {
+        position: absolute;
+        top: 5rem;
+        width: 100%;
+        left: 0;
+        background: blue; }
+        .header .navbar .header__input .input-text {
+          width: 100%; }
+      .header .navbar .menu {
+        position: absolute;
+        top: 7.9rem;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        flex-direction: column; } }
