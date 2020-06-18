@@ -17,10 +17,11 @@
       <!-- navbar  -->
       <nav class="navbar">
         <!-- Hamburger menu 0 -->
-        <div class="hamburger">
+
+        <label for="nav-toggle">
           <i class="fas fa-bars fa-2x"></i>
-        </div>
-        <input type="checkbox" class="nav-toggle" />
+        </label>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle" />
         <!-- logo 1 -->
         <div class="logo-box">
           <img src="/assets/images/github.svg" class="logo" alt="Github logo" />
@@ -37,6 +38,9 @@
         <!-- menu 3 -->
 
         <ul class="menu">
+          <li class="menu__item">
+            <a class="menu--link" href="#">Dashboard</a>
+          </li>
           <li class="menu__item">
             <a class="menu--link" href="#">Pull request</a>
           </li>

@@ -56,7 +56,6 @@ a {
       background-color: #fff;
       width: 40rem; }
   .navbar .menu {
-    outline: 1px solid red;
     display: flex;
     margin-left: 2rem;
     padding: .6rem .8rem; }
@@ -67,27 +66,44 @@ a {
 
 @media screen and (max-width: 1011px) {
   .header {
-    outline: 4px solid yellow;
-    height: 20vh; }
+    position: relative; }
     .header .navbar {
-      position: relative;
       display: flex;
-      outline: 1px solid green;
       align-items: center;
       justify-content: space-between;
       width: 92vw; }
+      .header .navbar .nav-toggle {
+        display: none; }
+      .header .navbar .nav-toggle:checked ~ .menu,
+      .header .navbar .nav-toggle:checked ~ .header__input {
+        display: block;
+        height: 30vh; }
       .header .navbar .header__input {
+        display: none;
         position: absolute;
         top: 5rem;
         width: 100%;
         left: 0;
-        background: blue; }
+        background: #24292e; }
         .header .navbar .header__input .input-text {
-          width: 100%; }
+          width: 92vw;
+          margin-right: 4vw;
+          margin-left: 4vw; }
       .header .navbar .menu {
+        background: #24292e;
         position: absolute;
-        top: 7.9rem;
+        top: 8.1rem;
         width: 100%;
-        margin: 0;
+        margin: 1rem 0;
         left: 0;
-        flex-direction: column; } }
+        padding: 0;
+        display: none; }
+        .header .navbar .menu .menu__item {
+          padding: 1rem 0;
+          border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+          width: 92vw;
+          margin: 0 auto; }
+          .header .navbar .menu .menu__item .menu--link {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600; } }
