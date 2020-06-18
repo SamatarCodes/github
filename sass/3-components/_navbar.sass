@@ -10,15 +10,18 @@
     padding-top: .5rem
     display: flex
     align-items: center
+    justify-content: space-between
+
+    .nav-toggle
+        display: none
 
     // logo div 
     .logo-box
-
         margin-right: 1.5rem
         .logo
             width: 3.2rem
 
-    // input field
+    // input field section 
     .header__input
 
         .input-text
@@ -39,12 +42,42 @@
                 background-color: #fff
                 width: 40rem
 
-    // navbar
+    // ======== CENTER MENU ============
     .menu
-
         display: flex
-        margin-left: 2rem
+
         padding: .6rem .8rem
+        color: #fff
+        font-size: 1.4rem
+
+        .menu__item
+            margin-right: 1.6rem
+            font-weight: 600
+
+        .menu--dashboard
+            display: none
+
+    // ======== MENU ON THE RIGHT ============
+    .menu-right
+        // outline: 1px solid red
+        flex: 1
+
+        .menu-right__ul
+            display: flex
+            justify-content: flex-end
+            align-items: center
+
+            img
+                width: 2rem
+                border-radius: .3rem
+
+            .menu-right__li
+                margin-right: 2rem
+
+                i
+                    cursor: pointer
+
+// ====== End navbar ==========
 
 // MEDIA QUERIES
 @media screen and  (min-width: 1012px)
@@ -52,6 +85,9 @@
         display: none
 
 @media screen and (max-width: 1011px)
+    .addToHeader
+        min-height: 42vh
+
     .header
         // min-height: 42vh
         position: relative
@@ -73,6 +109,10 @@
                     height: 30vh
 
             .hamburger
+                color: #fff
+
+                &:hover
+                    color: $text-grey-color
 
             .header__input
                 display: none
@@ -104,10 +144,10 @@
                     border-top: .5px solid $border-color
                     width: 92vw
                     margin: 0 auto
+                .menu--dashboard
+                    display: block
 
                     .menu--link
                         color: #fff
                         font-size: 1.4rem
                         font-weight: 600
-
-// End of navbar 

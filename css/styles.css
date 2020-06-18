@@ -36,7 +36,10 @@ a {
   margin: 0 auto;
   padding-top: .5rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
+  .navbar .nav-toggle {
+    display: none; }
   .navbar .logo-box {
     margin-right: 1.5rem; }
     .navbar .logo-box .logo {
@@ -57,14 +60,35 @@ a {
       width: 40rem; }
   .navbar .menu {
     display: flex;
-    margin-left: 2rem;
-    padding: .6rem .8rem; }
+    padding: .6rem .8rem;
+    color: #fff;
+    font-size: 1.4rem; }
+    .navbar .menu .menu__item {
+      margin-right: 1.6rem;
+      font-weight: 600; }
+    .navbar .menu .menu--dashboard {
+      display: none; }
+  .navbar .menu-right {
+    flex: 1; }
+    .navbar .menu-right .menu-right__ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .navbar .menu-right .menu-right__ul img {
+        width: 2rem;
+        border-radius: .3rem; }
+      .navbar .menu-right .menu-right__ul .menu-right__li {
+        margin-right: 2rem; }
+        .navbar .menu-right .menu-right__ul .menu-right__li i {
+          cursor: pointer; }
 
 @media screen and (min-width: 1012px) {
   .hamburger {
     display: none; } }
 
 @media screen and (max-width: 1011px) {
+  .addToHeader {
+    min-height: 42vh; }
   .header {
     position: relative; }
     .header .navbar {
@@ -78,6 +102,10 @@ a {
       .header .navbar .nav-toggle:checked ~ .header__input {
         display: block;
         height: 30vh; }
+      .header .navbar .hamburger {
+        color: #fff; }
+        .header .navbar .hamburger:hover {
+          color: rgba(255, 255, 255, 0.7); }
       .header .navbar .header__input {
         display: none;
         position: absolute;
@@ -103,7 +131,9 @@ a {
           border-top: 0.5px solid rgba(255, 255, 255, 0.15);
           width: 92vw;
           margin: 0 auto; }
-          .header .navbar .menu .menu__item .menu--link {
+        .header .navbar .menu .menu--dashboard {
+          display: block; }
+          .header .navbar .menu .menu--dashboard .menu--link {
             color: #fff;
             font-size: 1.4rem;
             font-weight: 600; } }
