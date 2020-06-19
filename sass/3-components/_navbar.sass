@@ -77,6 +77,32 @@
                 i
                     cursor: pointer
 
+            .notification
+                position: relative
+                color: #fff
+
+                &:hover ~ .notification__text
+
+                    visibility: visible
+                    opacity: 1
+
+            .notification__text
+                font-size: 1rem
+                background: black
+                color: #fff
+                padding: .7rem .6rem
+                border-radius: .3rem
+                font-weight: 600
+                position: absolute
+                width: 18rem
+                top: 4rem
+                right: 10.5rem
+                text-align: center
+                visibility: hidden
+                opacity: 0
+                transition: visiblity 0s, opacity 0.5s linear
+            .add-repo
+                display: flex
 // ====== End navbar ==========
 
 // MEDIA QUERIES
