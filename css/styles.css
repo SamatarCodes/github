@@ -101,9 +101,13 @@ a {
         text-align: center;
         visibility: hidden;
         opacity: 0;
-        transition: visiblity 0s, opacity 0.5s linear; }
-      .navbar .menu-right .menu-right__ul .add-repo {
-        display: flex; }
+        transition: opacity 0.5s linear; }
+      .navbar .menu-right .menu-right__ul .repo {
+        display: flex;
+        align-items: center;
+        color: #fff; }
+        .navbar .menu-right .menu-right__ul .repo .repo__add-1 {
+          margin-right: .5rem; }
 
 @media screen and (min-width: 1012px) {
   .hamburger {
@@ -159,4 +163,11 @@ a {
           .header .navbar .menu .menu--dashboard .menu--link {
             color: #fff;
             font-size: 1.4rem;
-            font-weight: 600; } }
+            font-weight: 600; }
+      .header .navbar .menu-right {
+        flex: 0; }
+        .header .navbar .menu-right .repo {
+          outline: 1px solid red;
+          display: none; }
+        .header .navbar .menu-right .profile-image {
+          display: none; } }

@@ -100,9 +100,16 @@
                 text-align: center
                 visibility: hidden
                 opacity: 0
-                transition: visiblity 0s, opacity 0.5s linear
-            .add-repo
+                transition: opacity 0.5s linear
+
+            .repo
                 display: flex
+                align-items: center
+                color: #fff
+
+                .repo__add-1
+                    margin-right: .5rem
+
 // ====== End navbar ==========
 
 // MEDIA QUERIES
@@ -177,3 +184,14 @@
                         color: #fff
                         font-size: 1.4rem
                         font-weight: 600
+
+            // == MENU ON THE RIGHT ==
+            .menu-right
+                flex: 0
+
+                .repo
+                    outline: 1px solid red
+                    display: none
+
+                .profile-image
+                    display: none
