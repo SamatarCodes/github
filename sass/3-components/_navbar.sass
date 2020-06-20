@@ -124,8 +124,9 @@
         display: none
 
 @media screen and (max-width: 1011px)
+    // ADDED TO JS 
     .addToHeader
-        min-height: 32rem
+        min-height: 38vh
         display: flex
         align-items: start
 
@@ -144,11 +145,11 @@
             .nav-toggle
                 display: none
 
+            // when hamburger icon is clicked
             .nav-toggle
                 &:checked ~ .menu,
                 &:checked ~ .header__input
                     display: block
-                    min-height: 33vh
 
             .hamburger
                 color: #fff
@@ -156,37 +157,44 @@
                 &:hover
                     color: $text-grey-color
 
+            // Search input main div 
             .header__input
                 display: none
                 position: absolute
                 padding-top: 1rem
                 top: 5rem
-                width: 100%
+                width: 94%
                 left: 0
+                right: 0
                 background: $color-primary
+                padding-bottom: 3rem
+                margin-right: auto
+                margin-left: auto
+                height: 5vh
 
+                // Search input field 
                 .input-text
-                    width: 92vw
-                    margin-right: 4vw
-                    margin-left: 4vw
+                    width: 100%
 
-            // ul
+            // MENU - CENTER
             .menu
                 background: $color-primary
                 position: absolute
-                top: 8.1rem
+                top: 8.9rem
                 width: 100%
                 margin: 1rem 0
                 left: 0
                 padding: 0
                 display: none
 
-                // menu li
+                // menu center li
                 .menu__item
                     padding: 1rem 0
                     border-top: .5px solid $border-color
                     width: 92vw
                     margin: 0 auto
+
+                // dashboard  
                 .menu--dashboard
                     display: block
 

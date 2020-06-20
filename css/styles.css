@@ -124,7 +124,7 @@ a {
 
 @media screen and (max-width: 1011px) {
   .addToHeader {
-    min-height: 32rem;
+    min-height: 38vh;
     display: flex;
     align-items: start; }
   .header {
@@ -140,8 +140,7 @@ a {
         display: none; }
       .header .navbar .nav-toggle:checked ~ .menu,
       .header .navbar .nav-toggle:checked ~ .header__input {
-        display: block;
-        min-height: 33vh; }
+        display: block; }
       .header .navbar .hamburger {
         color: #fff; }
         .header .navbar .hamburger:hover {
@@ -151,17 +150,20 @@ a {
         position: absolute;
         padding-top: 1rem;
         top: 5rem;
-        width: 100%;
+        width: 94%;
         left: 0;
-        background: #24292e; }
+        right: 0;
+        background: #24292e;
+        padding-bottom: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 5vh; }
         .header .navbar .header__input .input-text {
-          width: 92vw;
-          margin-right: 4vw;
-          margin-left: 4vw; }
+          width: 100%; }
       .header .navbar .menu {
         background: #24292e;
         position: absolute;
-        top: 8.1rem;
+        top: 8.9rem;
         width: 100%;
         margin: 1rem 0;
         left: 0;
