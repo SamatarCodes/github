@@ -1,7 +1,7 @@
 .header
     background: $color-primary
     margin: 0
-    height: 8vh
+    min-height: 6vh
     display: flex
     align-items: center
 
@@ -13,7 +13,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding-left: 1.6rem
 
     .nav-toggle
         display: none
@@ -123,10 +122,13 @@
 
 @media screen and (max-width: 1011px)
     .addToHeader
-        min-height: 42vh
+        min-height: 45vh
+        display: flex
+        align-items: start
+        padding-top: .7rem
 
     .header
-        // min-height: 42vh
+        margin: 0
         position: relative
 
         .navbar
@@ -143,7 +145,7 @@
                 &:checked ~ .menu,
                 &:checked ~ .header__input
                     display: block
-                    height: 35vh
+                    min-height: 33vh
 
             .hamburger
                 color: #fff
@@ -154,7 +156,8 @@
             .header__input
                 display: none
                 position: absolute
-                top: 5rem
+                padding-top: 1rem
+                top: 4rem
                 width: 100%
                 left: 0
                 background: $color-primary
@@ -199,3 +202,6 @@
 
                 .profile-image
                     display: none
+
+                .menu-right__li
+                    margin: 0
