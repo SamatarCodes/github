@@ -1,18 +1,21 @@
 .header
     background: $color-primary
     margin: 0
-    min-height: 6vh
+    min-height: 7vh
     display: flex
     align-items: center
+    padding-left: 1.6rem
+    padding-right: 1.6rem
 
 // navbar 
 .navbar
     width: 98vw
     margin: 0 auto
-    // padding-top: .5rem
+    padding-top: .5rem
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: .8rem
 
     .nav-toggle
         display: none
@@ -113,7 +116,7 @@
                 .repo__add-1
                     margin-right: .5rem
 
-// ====== End navbar ==========
+// ========================== End navbar ==================
 
 // MEDIA QUERIES
 @media screen and  (min-width: 1012px)
@@ -122,14 +125,14 @@
 
 @media screen and (max-width: 1011px)
     .addToHeader
-        min-height: 45vh
+        min-height: 32rem
         display: flex
         align-items: start
-        padding-top: .7rem
 
     .header
         margin: 0
         position: relative
+        padding-top: .8rem
 
         .navbar
             display: flex
@@ -157,7 +160,7 @@
                 display: none
                 position: absolute
                 padding-top: 1rem
-                top: 4rem
+                top: 5rem
                 width: 100%
                 left: 0
                 background: $color-primary

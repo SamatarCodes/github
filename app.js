@@ -8,7 +8,3 @@ input.addEventListener('change', (e) => {
     header.classList.remove('addToHeader');
   }
 });
-
-// input.addEventListener('change', (e) => {
-//   e.target.classList.toggle('addToHeader');
-// });
