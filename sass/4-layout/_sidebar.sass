@@ -42,9 +42,26 @@
 @media screen and (max-width: 1172px)
     .left-section
         min-width: 25%
-        outline: 1px solid red
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 818px)
     .left-section
-        outline: 1px solid blue
+
         height: auto
+        width: 100%
+
+        .profile
+            border: none
+
+            // USER PROFILE IMAGE 
+            .profile__image
+                width: 25%
+            // USER PROFILE STATUS 
+            .profile__user-status
+                width: 100%
+                margin-top: 1rem
+                border: .1rem solid #e1e4e8
+                padding: .4rem .8rem
+
+        // USER LOCATION 
+        .edit-area
+            display: none

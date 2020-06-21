@@ -263,6 +263,13 @@ a {
   .underline-nav .underline-nav--item {
     margin-right: 1rem; } }
 
+@media screen and (max-width: 650px) {
+  .underline-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 100%; } }
+
 .main-section {
   max-width: 1280px;
   width: 95vw;
@@ -270,7 +277,7 @@ a {
   margin: 2.4rem auto;
   display: flex; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 818px) {
   .main-section {
     flex-direction: column; } }
 
@@ -305,19 +312,24 @@ a {
 
 @media screen and (max-width: 1172px) {
   .left-section {
-    min-width: 25%;
-    outline: 1px solid red; } }
+    min-width: 25%; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 818px) {
   .left-section {
-    outline: 1px solid blue;
-    height: auto; } }
+    height: auto;
+    width: 100%; }
+    .left-section .profile {
+      border: none; }
+      .left-section .profile .profile__image {
+        width: 25%; }
+      .left-section .profile .profile__user-status {
+        width: 100%;
+        margin-top: 1rem;
+        border: .1rem solid #e1e4e8;
+        padding: .4rem .8rem; }
+    .left-section .edit-area {
+      display: none; } }
 
 .right-section {
   flex: 1;
   padding: 0 1.6rem; }
-
-@media screen and (max-width: 767px) {
-  display: flex;
-  flex-direction: column;
-  background: blue; }

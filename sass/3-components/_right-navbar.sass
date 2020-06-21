@@ -43,6 +43,7 @@
         .underline-nav--item
             display: inline-block
 
+// MEDIA QUERIES    
 @media screen and (max-width: 1011px)
 
     .underline-nav
@@ -63,3 +64,10 @@
         .underline-nav--item
             // display: inline-block
             margin-right: 1rem
+
+@media screen and (max-width: 650px)
+    .underline-nav
+        overflow-x: auto
+        white-space: nowrap
+        display: inline-block
+        max-width: 100%
