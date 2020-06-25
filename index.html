@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <link rel="icon" href="/assets/images/github.svg" />
     <link
       rel="stylesheet"
@@ -91,6 +93,7 @@
           <img
             src="/assets/images/profile.png"
             class="profile__image"
+            id="profile-image"
             alt="profile-image"
           />
           <div class="profile__user-status">
@@ -110,7 +113,7 @@
 
         <!-- EDIT PROFILE AREA -->
         <div class="edit-area">
-          <button class="edit-area__button">Edit profile</button>
+          <button class="edit-area__button">Follow</button>
           <!-- edit location area -->
           <div class="edit-area__location">
             <i class="fas fa-map-marker-alt edit--icon-location"></i>
@@ -219,6 +222,7 @@
       </div>
     </section>
 
+    <script src="/utils.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>
