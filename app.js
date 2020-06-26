@@ -24,7 +24,7 @@ input.addEventListener('change', (e) => {
 // * Alert message
 const alertMessage = () => {
   alertBox.innerHTML = `
-  <div class="alerts">We couldn’t find any repositories matching: </div>
+  <div class="alerts">We couldn’t find any repositories matching: ${searchInput.value} </div>
   `;
 
   setTimeout(() => {
