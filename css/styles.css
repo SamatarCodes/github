@@ -303,6 +303,8 @@ a {
       font-size: 1.2rem;
       margin-top: .8rem;
       margin-bottom: 1.6rem; }
+      .projects__list .projects__container .project__description .fas {
+        margin-right: .7rem; }
 
 @media screen and (max-width: 767px) {
   .projects__list {
