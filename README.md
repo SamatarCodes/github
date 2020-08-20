@@ -4,11 +4,11 @@
 
 # Welcome 👋
 
-### This is a clone of Github. Built this while learning how to work with APIs using Vanilla JS.
+This is a clone of Github. Built this while learning how to work with APIs using Vanilla JS.
 
-### The search bar is functional. You can search any github users and it will display their latest pinned repositories.
+The search bar is functional. You can search any github users and it will display their latest pinned repositories.
 
-### Also implemented the debounce function.
+Also implemented the debounce function.
 
 <br />
 
@@ -18,4 +18,4 @@
 
 # Preview
 
-### Find the preview here: [https://github-clone7.netlify.app/](https://github-clone7.netlify.app/)
+Find the preview here: [https://github-clone7.netlify.app/](https://github-clone7.netlify.app/)
